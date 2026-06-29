@@ -1,0 +1,39 @@
+/* style.css */
+:root {
+    --stage-width: 1920px;
+    --stage-height: 402px;
+    --background-colour: #1C1B1C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: var(--stage-width);
+    height: var(--stage-height);
+    overflow: hidden;
+    background-color: var(--background-colour);
+}
+
+body {
+    position: relative;
+}
+
+#stage {
+    position: relative;
+    width: var(--stage-width);
+    height: var(--stage-height);
+    overflow: hidden;
+    background-color: var(--background-colour);
+}
+
+#stage canvas,
+canvas {
+    display: block;
+    width: var(--stage-width) !important;
+    height: var(--stage-height) !important;
+}
